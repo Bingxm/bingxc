@@ -1,0 +1,157 @@
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .sidebar {
+    flex: 1;
+    min-width: 0;
+  }
+  
+  .content {
+    flex: 3;
+    min-width: 0;
+  }
+  
+  /* Make the layout responsive */
+  @media (max-width: 768px) {
+    .wrapper {
+      flex-direction: column;
+    }
+    .navul{
+        width: 768px;
+       }
+        .nava{
+    width: 768px;
+    
+        }
+    .sidebar, .content {
+      flex: none;
+      width: 100%;
+    }
+  }
+/* Define the main container as a flexbox */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+  }
+  
+  /* Define the child elements */
+  .child {
+    flex: 1;
+    min-width: 300px;
+    max-width: 50%;
+    margin: 10px;
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+  }
+  
+  /* Set media queries to adjust the layout for different screen sizes */
+  @media screen and (max-width: 768px) {
+    .child {
+      max-width: 100%;
+    }
+    .navul{
+        width: 768px;
+       }
+        .nava{
+    width: 768px;
+    
+        }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .child {
+      min-width: 100%;
+    }
+    .navul{
+        width: 480px;
+       }
+        .nava{
+    width: 480px;
+    
+        }
+  }
+
+  html, body {
+    height: 100%;
+    margin: 0;
+    max-width: 1200px;
+  }
+  
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .signinh1 {
+    margin-top: 0;
+  }
+  
+  input[type="text"], input[type="password"] {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  input[type="checkbox"] {
+    margin: 10px;
+  }
+  
+  .privacy {
+    color: blue;
+    cursor: pointer;
+  }
+  
+  .siginbutton {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .siginbutton:hover {
+    background-color: #3e8e41;
+  }
+  
+  .signina {
+    text-decoration: none;
+    color: white;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .sidebar{
+        max-width: 400px;
+    }
+    
+    .login-form {
+        
+      padding: 10px;
+    }
+   .navul{
+    width: 600px;
+   }
+    .nava{
+width: 600px;
+
+    }
+    
+  }
+      
